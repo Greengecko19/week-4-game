@@ -1,0 +1,70 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles_crystal.css">
+
+</head>
+<body>
+    <script src="script_crystal.js"></script>
+    
+    <div class="col-md-10 main-container">
+        <div class="col-md-10 page-header">
+            <h1>The Crystals Collector!</h1>
+        </div>
+
+        <div class="col-md-10 instructions">
+            <h2>Instructions</h2>
+            <h3>You are give a Random Number at the start of the game. Click on the crystals
+                to add value to your number.You win the game by matching the Random Number.
+                You will need to determine the values of the crystals and add them together
+                to obtain the given number.  Every time the game restarts, the values of the 
+                crystals change.</h3>
+        </div>
+
+        <div class="col-md-10 number-boxes">
+            <div class="col-md-5 number-box1">
+                <h1 class="random-number"><small>The Random Number is:  </small><span id="randomNumber"></span></h1>
+            </div>
+
+            <div class="col-md-5 number-box2">
+                    <h1 class="your-number"><small>Your number adds up to:  </small><span id="yourNumber"></span></h1>
+            </div>
+        </div>
+
+        <!-- Images of crystals -->
+        <div class="col-md-10 crystals">
+            <img class="col-md-2 crystal-spec" src="assets/images/icon1_ruby.png">
+            <img class="col-md-2 crystal-spec" src="assets/images/icon2_emerald.png">
+            <img class="col-md-2 crystal-spec" src="assets/images/icon3_sapphire.png">
+            <img class="col-md-2 crystal-spec" src="assets/images/icon4_zircon.png">
+        </div>
+
+
+        <div class="col-md-10 wins-losses">
+            <div class="col-md-10">
+                <h2 class="text-center">SCOREBOARD</h2>
+            </div>
+            
+            <div class="col-md-5">
+                <h1 class="number-wins"><small>Wins:  </small><span id="numberWins"></span></h1>
+            </div>
+
+            <div class="col-md-5">
+                <h1 class="number-losses"><small>Losses:  </small><span id="numberLosses"></span></h1>
+            </div>
+    
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
