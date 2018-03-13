@@ -20,12 +20,15 @@ function genRandomNum() {
     document.getElementById("random-number").innerHTML = randomNumber;
 }
 
+// creata an array to hold four "crystal" values between 1 - 12
 createArray();
 
 function createArray() {
     // assign a non-duplicate number between 1 and 12 to each crystal
     for (i = 0; i < 4; i++) {
         crystalArray[i] = Math.floor(Math.random() * 12) + 1;
+        console.log(crystalArray);
+        
     }
     crystalArray.sort();
 }
@@ -56,7 +59,7 @@ function addCrystals() {
 }
 
 // add value of crystal to youNumber
-$("#crystal1").on("click", addCrystals(cr1));
+document.getElementById("crystal1").onclick = addCrystals(cr1);
 $("#crystal2").on("click", addCrystals(cr2));
 $("#crystal3").on("click", addCrystals(cr3));
 $("#crystal4").on("click", addCrystals(cr4));
