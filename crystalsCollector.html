@@ -8,11 +8,12 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles_crystal.css">
+    <link rel="stylesheet" href="assets/css/styles_crystal.css">
 
 </head>
 <body>
-    <script src="script_crystal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/script_crystal.js"></script>
     
     <div class="col-md-10 main-container">
         <div class="col-md-10 page-header">
@@ -30,20 +31,20 @@
 
         <div class="col-md-10 number-boxes">
             <div class="col-md-5 number-box1">
-                <h1 class="random-number"><small>The Random Number is:  </small><span id="randomNumber"></span></h1>
+                <h1 ><small>The Random Number is:  </small><span id="random-number"></span></h1>
             </div>
 
             <div class="col-md-5 number-box2">
-                    <h1 class="your-number"><small>Your number adds up to:  </small><span id="yourNumber"></span></h1>
+                    <h1 class="your-number"><small>So far, your number adds up to:  </small><span id="your-number"></span></h1>
             </div>
         </div>
 
         <!-- Images of crystals -->
-        <div class="col-md-10 crystals">
-            <img class="col-md-2 crystal-spec" src="assets/images/icon1_ruby.png">
-            <img class="col-md-2 crystal-spec" src="assets/images/icon2_emerald.png">
-            <img class="col-md-2 crystal-spec" src="assets/images/icon3_sapphire.png">
-            <img class="col-md-2 crystal-spec" src="assets/images/icon4_zircon.png">
+        <div class="col-md-10 text-center crystals">
+            <span id="crystal1"><img class="col-md-2 center crystal-spec" src="assets/images/icon1_ruby.png"></span>
+            <span id="crystal2"><img class="col-md-2 crystal-spec" src="assets/images/icon2_emerald.png"></span>
+            <span id="crystal3"><img class="col-md-2 crystal-spec" src="assets/images/icon3_sapphire.png"></span>
+            <span id="crystal4"><img class="col-md-2 crystal-spec" src="assets/images/icon4_zircon.png"></span>
         </div>
 
 
@@ -53,11 +54,11 @@
             </div>
             
             <div class="col-md-5">
-                <h1 class="number-wins"><small>Wins:  </small><span id="numberWins"></span></h1>
+                <h1><small>Wins:  </small><span id="number-wins"></span></h1>
             </div>
 
             <div class="col-md-5">
-                <h1 class="number-losses"><small>Losses:  </small><span id="numberLosses"></span></h1>
+                <h1><small>Losses:  </small><span id="number-losses"></span></h1>
             </div>
     
         </div>
