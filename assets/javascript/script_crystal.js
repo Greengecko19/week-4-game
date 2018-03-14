@@ -61,6 +61,9 @@ function goodJob() {
     wins++;
     freezeFlag = true;
     document.getElementById("number-wins").innerHTML = wins;
+
+    // vv jquery won't work! vv
+    // $("#number-wins").innerHTML = wins;
 }
 
 // if the amount goes over, do this
@@ -71,8 +74,10 @@ function bombOut() {
     document.getElementById("status-msg").innerHTML = ":  You bombed out!";
     losses++;
     freezeFlag = true;
-    console.log("losses:  " + losses);        
+    console.log("losses:  " + losses);
     document.getElementById("number-losses").innerHTML = losses;
+    // unable to get the jquery call to work below vvv
+    // $("#number-losses").innerHTML = losses;
 }
 
 

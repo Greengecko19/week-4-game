@@ -1,0 +1,25 @@
+#main-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: darkblue;  
+}
+
+.page-header {
+    background-color: burlywood;
+    border-width: 3px;
+    border-color: darkgrey;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+.main-container {
+    border-width: 3px;
+    border-color: darkgrey;
+}
+
+.instructions {
+    font-family: cursive;
+    font-style: italic;
+}

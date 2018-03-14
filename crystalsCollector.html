@@ -1,7 +1,7 @@
 <<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Magic Crystals</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,14 +10,14 @@
 </head>
 <body>
    
-    <div class="col-md-10 main-container">
-        <div class="col-md-10 page-header">
-            <h1>The Crystals Collector!</h1>
+    <div class="main-container col-md-10">
+        <div class="col-md-10 page-header border border-top">
+            <h1 class="border-top" id="main-title">The Crystals Collector!</h1>
         </div>
 
-        <div class="col-md-10 instructions">
+        <div class="col-md-10 border border-primary">
             <h2>Instructions</h2>
-            <h3>You are given a Random Number at the start of the game. Click on the crystals
+            <h3 class="instructions">You are given a Random Number at the start of the game. Click on the crystals
                 to add value to your number.You win the game by matching the Random Number.
                 You will need to determine the values of the crystals and add them together
                 to obtain the given number.  Every time the game restarts, the values of the 
@@ -25,7 +25,7 @@
         </div>
 
         <div class="col-md-8 text-center">
-            <button onclick="generateNumbers()">Generate Random Number</button>
+            <button type=button onclick="generateNumbers()" class="btn btn-primary btn-lg active">Generate Random Number</button>
         </div>
 
 
@@ -40,7 +40,7 @@
         </div>
 
         <!-- Images of crystals -->
-        <div class="col-md-10 text-center crystals">
+        <div class="col-md-10">
             <span id="crystal0"><img class="col-md-2 center crystal-spec" src="assets/images/icon1_ruby.png"></span>
             <span id="crystal1"><img class="col-md-2 center crystal-spec" src="assets/images/icon2_emerald.png"></span>
             <span id="crystal2"><img class="col-md-2 center crystal-spec" src="assets/images/icon3_sapphire.png"></span>
@@ -64,7 +64,7 @@
         </div>
     </div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/javascript/script_crystal.js"></script>
 
 </body>
