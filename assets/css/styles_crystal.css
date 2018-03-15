@@ -1,5 +1,5 @@
 #main-title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium'; /*, 'Arial Narrow', Arial, sans-serif;*/
     font-size: 50px;
     color: darkblue;
     padding: 10px;
@@ -26,15 +26,36 @@ h2 {
 }
 
 .text-center {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.number-boxes {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.crystal-row {
+    text-align: center;
     padding: 10px;
+
 }
 
 .scoreboard {
     background-color: green;
+    color: white
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: gray;
+    border-width: 5px;
 }
 
 .crystal-spec {
-    border-color: gray;
-    border-width: 5px;
     max-height: 50px;
 }
