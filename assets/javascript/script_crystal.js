@@ -41,7 +41,7 @@ function generateNumbers() {
 
 
     // check array for unique values, re-run generateNumbers if values non-unique
-    for (j = 0; j < 4; j++) {
+    for (j = 0; j < 3; j++) {
         if (crystalArray[j] == crystalArray[j+1]) {
         generateNumbers();
         } else { // assign values to variables from array values
